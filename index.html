@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensu Learning - Plataforma Educativa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Header -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="assets/imagenes/logo.png" alt="Logo Sensu Learning" style="width: 60px;">
+                </div>
+                <div class="logo-text">Sensu Learning</div>
+            </div>
+            
+            <!-- Menú de navegación (visible en desktop) -->
+            <nav class="desktop-nav" id="desktop-nav">
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#features">Funciones</a></li>
+                    <li><a href="#tools">Herramientas</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transforma tu forma de estudiar</h1>
+            <p>Descubre herramientas inteligentes para mejorar tu aprendizaje y preparación para exámenes. Aprende de manera más eficiente y efectiva.</p>
+            <button class="cta-button">Comenzar Ahora</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué Sensu Learning?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Aprendizaje Inteligente</h3>
+                    <p>Nuestras herramientas utilizan inteligencia artificial para optimizar tu proceso de estudio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rápido y Eficiente</h3>
+                    <p>Genera resúmenes, cuestionarios y mapas conceptuales en cuestión de minutos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Acceso en Cualquier Lugar</h3>
+                    <p>Plataforma completamente responsive para estudiar desde cualquier dispositivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Nuestras Herramientas</h2>
+            <div class="tools-grid">
+                <!-- Generador de Resúmenes -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Generador de Resúmenes</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Crea resúmenes claros y estructurados de tus documentos o temas específicos.</p>
+                        <div class="tool-options">
+                            <button class="option-btn" onclick="openModal('summary')">
+                                <i class="fas fa-upload"></i>
+                                Subir PDF
+                            </button>
+                            <button class="option-btn" onclick="openModal('summary-ai')">
+                                <i class="fas fa-robot"></i>
+                                Generar con IA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generador de Cuestionarios -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Generador de Cuestionarios</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Elabora preguntas y respuestas basadas en documentos o temas específicos.</p>
+                        <div class="tool-options">
+                            <button class="option-btn" onclick="openModal('quiz')">
+                                <i class="fas fa-upload"></i>
+                                Subir PDF
+                            </button>
+                            <button class="option-btn" onclick="openModal('quiz-ai')">
+                                <i class="fas fa-robot"></i>
+                                Generar con IA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podcast de Estudio -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-podcast"></i>
+                        <h3>Podcast de Estudio</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Convierte texto en audio para estudiar mientras realizas otras actividades.</p>
+                        <div class="tool-options">
+                            <button class="option-btn" onclick="openModal('podcast')">
+                                <i class="fas fa-upload"></i>
+                                Subir PDF
+                            </button>
+                            <button class="option-btn" onclick="openModal('podcast-text')">
+                                <i class="fas fa-keyboard"></i>
+                                Escribir Texto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tests Interactivos -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Tests Interactivos</h3>
+                    </div>
+                    <div class="tool-content">
+                        <p>Pon a prueba tus conocimientos con tests interactivos personalizados.</p>
+                        <div class="tool-options">
+                            <button class="option-btn" onclick="openModal('test')">
+                                <i class="fas fa-upload"></i>
+                                Subir PDF
+                            </button>
+                            <button class="option-btn" onclick="openModal('test-ai')">
+                                <i class="fas fa-robot"></i>
+                                Generar con IA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Summary Modals -->
+    <div id="summary-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('summary')">&times;</button>
+            <h2 class="modal-title">Generar Resumen desde PDF</h2>
+            <form id="summary-form">
+                <div class="form-group">
+                    <label for="summary-file">Selecciona tu archivo PDF:</label>
+                    <input type="file" id="summary-file" accept=".pdf" required>
+                </div>
+                <button type="submit" class="submit-btn">Generar Resumen</button>
+            </form>
+            <div id="summary-result" class="results"></div>
+        </div>
+    </div>
+
+    <div id="summary-ai-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('summary-ai')">&times;</button>
+            <h2 class="modal-title">Generar Resumen con IA</h2>
+            <form id="summary-ai-form">
+                <div class="form-group">
+                    <label for="summary-topic">¿De qué tema deseas generar el resumen?</label>
+                    <textarea id="summary-topic" placeholder="Escribe el tema aquí..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Generar Resumen</button>
+            </form>
+            <div id="summary-ai-result" class="results"></div>
+        </div>
+    </div>
+
+    <!-- Quiz Modals -->
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('quiz')">&times;</button>
+            <h2 class="modal-title">Generar Cuestionario desde PDF</h2>
+            <form id="quiz-form">
+                <div class="form-group">
+                    <label for="quiz-file">Selecciona tu archivo PDF:</label>
+                    <input type="file" id="quiz-file" accept=".pdf" required>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-count">Número de preguntas:</label>
+                    <select id="quiz-count" required>
+                        <option value="10">10 preguntas</option>
+                        <option value="15">15 preguntas</option>
+                        <option value="20">20 preguntas</option>
+                        <option value="25">25 preguntas</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Generar Cuestionario</button>
+            </form>
+            <div id="quiz-result" class="results"></div>
+        </div>
+    </div>
+
+    <div id="quiz-ai-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('quiz-ai')">&times;</button>
+            <h2 class="modal-title">Generar Cuestionario con IA</h2>
+            <form id="quiz-ai-form">
+                <div class="form-group">
+                    <label for="quiz-ai-topic">¿De qué tema deseas el cuestionario?</label>
+                    <textarea id="quiz-ai-topic" placeholder="Escribe el tema aquí..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-ai-count">Número de preguntas:</label>
+                    <select id="quiz-ai-count" required>
+                        <option value="10">10 preguntas</option>
+                        <option value="15">15 preguntas</option>
+                        <option value="20">20 preguntas</option>
+                        <option value="25">25 preguntas</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Generar Cuestionario</button>
+            </form>
+            <div id="quiz-ai-result" class="results"></div>
+        </div>
+    </div>
+
+    <!-- Podcast Modals -->
+    <div id="podcast-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('podcast')">&times;</button>
+            <h2 class="modal-title">Crear Podcast desde Documento</h2>
+            <form id="podcast-form">
+                <div class="form-group">
+                    <label for="podcast-file">Selecciona tu documento PDF:</label>
+                    <input type="file" id="podcast-file" accept=".pdf" required>
+                </div>
+                <button type="submit" class="submit-btn">Generar Podcast</button>
+            </form>
+            <div id="podcast-result" class="results"></div>
+        </div>
+    </div>
+
+    <div id="podcast-text-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('podcast-text')">&times;</button>
+            <h2 class="modal-title">Crear Podcast desde Texto</h2>
+            <form id="podcast-text-form">
+                <div class="form-group">
+                    <label for="podcast-text">Escribe el texto para el podcast:</label>
+                    <textarea id="podcast-text" placeholder="Escribe aquí el contenido del podcast..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Generar Podcast</button>
+            </form>
+            <div id="podcast-text-result" class="results"></div>
+        </div>
+    </div>
+
+    <!-- Test Modals -->
+    <div id="test-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('test')">&times;</button>
+            <h2 class="modal-title">Generar Test desde PDF</h2>
+            <form id="test-form">
+                <div class="form-group">
+                    <label for="test-file">Selecciona tu archivo PDF:</label>
+                    <input type="file" id="test-file" accept=".pdf" required>
+                </div>
+                <div class="form-group">
+                    <label for="test-count">Número de preguntas:</label>
+                    <select id="test-count" required>
+                        <option value="10">10 preguntas</option>
+                        <option value="15">15 preguntas</option>
+                        <option value="20">20 preguntas</option>
+                        <option value="25">25 preguntas</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Generar Test</button>
+            </form>
+            <div id="test-result" class="results"></div>
+        </div>
+    </div>
+
+    <div id="test-ai-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('test-ai')">&times;</button>
+            <h2 class="modal-title">Generar Test con IA</h2>
+            <form id="test-ai-form">
+                <div class="form-group">
+                    <label for="test-ai-topic">¿De qué tema deseas el test?</label>
+                    <textarea id="test-ai-topic" placeholder="Escribe el tema aquí..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="test-ai-count">Número de preguntas:</label>
+                    <select id="test-ai-count" required>
+                        <option value="10">10 preguntas</option>
+                        <option value="15">15 preguntas</option>
+                        <option value="20">20 preguntas</option>
+                        <option value="25">25 preguntas</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Generar Test</button>
+            </form>
+            <div id="test-ai-result" class="results"></div>
+        </div>
+    </div>
+
+    <!-- Footer personalizado -->
+        <footer style="margin-top: 3rem; padding: 2rem 0; background: #fff; text-align: center;">
+            <div style="font-size: 1.3rem; color: #1746a2; font-weight: 500; margin-bottom: 0.5rem;">
+                APLICACION WEB DESARROLLADA POR
+                </div>
+                <hr style="max-width: 350px; margin: 0.5rem auto 1rem auto; border: none; border-top: 2px solid #1746a2;">
+                <div>
+                <a href="https://cognetix-innovations.vercel.app" target="_blank" style="color: #1746a2; font-weight: bold; text-decoration: none; background: #e6f0ff; padding: 0.4em 1.2em; border-radius: 8px; transition: background 0.2s; font-size: 1.2rem;">COGNETIX INNOVATIONS</a>
+                </div>
+        </footer>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Sensu Learning. Todos los derechos reservados.</p>
+            <p>Plataforma educativa para mejorar tu aprendizaje</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/podcast.js"></script>
+</body>
+        
+</html>
