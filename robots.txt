@@ -1,0 +1,27 @@
+# robots.txt — configuración recomendada para sensunapan.vercel.app
+# Fecha de generación: 2025-...
+
+# 1) Reglas generales para todos los bots
+User-agent: *
+# Permitir todo
+Allow: /
+
+# 2) Bloquear bots problemáticos (opcional). Ejemplo:
+# User-agent: SomeBadBot
+# Disallow: /
+
+# 3) Bloquear URLs con parámetros de consulta (evita contenido duplicado / urls dinámicas innecesarias)
+# Disallow: /*?*
+
+# 4) Bloquear ciertos tipos de archivos si no aportan valor de SEO
+# (ejemplo si no quieres que aparezcan PDFs en resultados de búsqueda)
+Disallow: /*.pdf$
+Disallow: /*.zip$
+# (agrega aquí otras extensiones que no quieras indexar)
+
+# 5) Declarar la ubicación de tu sitemap para que los bots lo encuentren fácilmente
+Sitemap: https://sensunapan.vercel.app/sitemap.xml
+
+# 6) Comentarios útiles
+# — Las líneas que empiezan con # son comentarios para futuros desarrolladores.
+# — Evita bloquear CSS, JS, imágenes o recursos necesarios para que Google pueda renderizar correctamente la página.
