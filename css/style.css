@@ -273,7 +273,7 @@ nav a:hover, nav a.active {
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.9)), url('../assets/imagenes/fondo1.jpg') center/cover;
+    background: linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.9)), url('../assets/imagenes/fondo1.1.webp') center/cover;
     color: var(--white);
     /* border-radius: 0px;  -->  es el borde del hero pero se ve mejor sin el*/
     margin: 2rem 0;
